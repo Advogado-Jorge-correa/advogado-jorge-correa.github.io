@@ -1,138 +1,359 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advogado Dr. Jorge Correa</title>
-    <!-- Adicione os links para os arquivos CSS do Bootstrap aqui -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jorge Corrêa Filho </title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet"> 
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="assets/css/style.css" rel="stylesheet">
+ 
 </head>
-<body>
+<body> 
 
+<!-- navbar.html  -->
 <!-- Barra de Navegação -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Advogado Dr. Jorge Correa</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#services">Serviços</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contato</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<div class="navbar">
+<div class="navbar-left">
+            
+<!-- Botão de menu lateral -->
+<button class="menu-btn" aria-label="Abrir Menu Lateral" onclick="toggleMenu()">☰</button>
+            
+<!-- Título da página -->
+<div class="navbar-title"></div>
+<a class="nav-link active" href="index.html">
+<b>HOME</b>
+</a>
 
-<!-- Seção Sobre -->
-<section id="about" class="py-5 mt-5">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-                <img src="./imagem/direito.jpg" alt="Advogado Jorge Correa" class="img-fluid rounded-circle">
-            </div>
-            <div class="col-lg-6">
-                <br><br>
-                <h2>Advogado Jorge Correa</h2>
-                <p>Bem-vindo ao escritório do Advogado Jorge Correa, onde a busca pela justiça está no centro de tudo o que fazemos. Nosso compromisso é servir você, nosso cliente, com integridade, dedicação e experiência legal incomparável.</p>
-                <p>Nossos serviços abrangem uma ampla gama de áreas jurídicas, desde consultas jurídicas até assistência legal em casos civis e criminais. Estamos aqui para ajudar a encontrar soluções justas para seus desafios legais e para representá-lo com paixão e empatia.</p>
-                <p>Nosso objetivo é fazer com que o processo legal seja o mais tranquilo possível para você. Não importa quão complexo seja o caso, nossa equipe está preparada para lidar com cada aspecto, para que você possa focar em seus objetivos e no que realmente importa.</p>
-                <p>Estamos ansiosos para ouvir sua história, entender suas necessidades e fornecer orientação personalizada. Entre em contato conosco hoje mesmo para agendar uma consulta inicial. Sua justiça é nossa prioridade, e estamos prontos para lutar por ela.</p>
-                <p>Advogado Jorge Correa</p>
-                <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+
+<!-- Menu Lateral -->
+<div id="menu" class="sidebar" role="navigation" aria-hidden="true">
+        
+<!-- Botão para fechar o menu -->
+<span class="close-btn" aria-label="Fechar Menu" onclick="closeMenu()">×</span>
+        
+<!-- Links do menu -->
+
+<a href="#inicio"><b>INÍCIO</b></a>
+<a href="#areas-atuacao"><b>ÁREAS DE ATUAÇÃO</b></a>
+
+<a href="#direito_do_trabalho">
+<h6>Direito do trabalho</h6></a>
+
+<a href="#direito_civil">
+<h6>Direito civil</h6></a>
+
+<a href="#direito_imobiliario">
+<h6>Direito imobiliário</h6></a>
+
+<a href="#direito_adminitrativo">
+<h6>Direito administrativo</h6></a>
+
+<a href="#direito_penal">
+<h6>Direito penal</h6></a>
+
+<a href="#direito_previdenciario">
+<h6>Direito previdenciário</h6></a>
+
+
+<a href="#sobre"><b>SOBRE</b></a>    
+<a href="#contato"><b>CONTATO</b></a>
+</div>
+
+<!-- /navbar.html -->
+
+<!-- Logo abaixo do menu -->
+<div style="background-color: #02133e; text-align: center; padding: 20px;">
+<br>
+<img id="inicio" src="assets/imagens/logodorado.jpg" alt="Logo" style="max-width: 100%; height: auto;">
+</div>
+ 
+
+
+<!-- áreas de atuação -->  
+<section  class="container text-center">
+<h2 id="areas-atuacao" class="section-header">Áreas de Atuação</h2>
 </section>
+<!-- /áreas de atuação -->  
 
-<!-- Seção Serviços -->
-<section id="services" class="bg-light py-5 mt-5">
-    <div class="container">
-        <h2>Nossos Serviços</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Consulta Jurídica</h5>
-                        <p class="card-text">Oferecemos consultas jurídicas para resolver seus problemas legais.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Assistência Legal</h5>
-                        <p class="card-text">Fornecemos assistência legal em casos civis e criminais.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Mediação de Conflitos</h5>
-                        <p class="card-text">Mediamos conflitos para encontrar soluções justas e pacíficas.</p>
-                    <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Seção Contato -->
+ 
+<!-- Cards containes --> 
+<div class="container">  
 
+ <!-- Card Direito Civil -->
+<div id="direito_civil" class="card">
+<div class="row g-0">
+<div class="col-md-4">
+<img class="card-img" src="assets/imagens/civil.jpg" alt="Imagem de Direito Civil">
+</div> 
+<div class="col-md-8">
+<div class="card-body">
+<h3>Direito Civil</h3>
+<p> O Direito Civil é o ramo que organiza e regula as relações jurídicas entre pessoas físicas e jurídicas na esfera cível, abrangendo uma ampla gama de situações cotidianas, como Contratos, Obrigações, Propriedade, Família e Sucessões. Considerado o "direito do cidadão", ele garante a proteção dos direitos individuais e a harmonização das interações sociais que não possuem regulamentação específica em outras áreas do direito.
+</p>
+<p> Neste ramo, também atuamos com Maestria em Direito do Consumidor e Direito Bancário, lutando para garantir os direitos de nossos clientes!
+</p>           
+<!-- ------ menu suspenso ------- -->                    
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#direitoCivil" aria-expanded="false" aria-controls="direitoCivil">
+Explorar Direito Civil
+</button>                   
+<!-- Texto oculto com submenus -->
+<div class="collapse collapse-text" id="direitoCivil">
+<ul><br>
+   
+
+<li><p> <strong>DIREITO DO CONSUMIDOR:</strong> Proteção dos direitos do consumidor em relações de consumo, prevenindo abusos e assegurando a justiça.</p>
+    <a href="direito_consumidor.html" class="btn btn-outline-primary btn-sm">Saiba Mais</a></li> <br>
+
+<li><p><strong>Direito Bancário:</strong> Lida com relações jurídicas entre instituições financeiras e clientes, garantindo transparência e respeito.</p>
+    <a href="direito_bancario.html" class="btn btn-outline-primary btn-sm">Saiba Mais</a></li> <br>         
+
+<li><p><strong>Contratos e Obrigações:</strong> Estabelecimento de direitos e deveres em acordos contratuais entre partes.</p>
+    <a href="contratoseobrigacoes.html" class="btn btn-outline-primary btn-sm">Saiba Mais</a></li><br>
+
+<li><p><strong>Família e Sucessões:</strong> Regulamenta direitos e deveres familiares, além de questões relacionadas a heranças.</p>
+    <a href="familia_su.html" class="btn btn-outline-primary btn-sm">Saiba Mais</a></li><br>
+
+
+</ul>  
+
+ <!-- Hero Section -->
+ <header class="hero"> 
+    <h2>Precisa de Ajuda Jurídica?</h2>
     
-<section id="contact" class="py-5 mt-5">
-    <div class="container">
-        <h2>Entre em Contato</h2>
-        <div class="row">
-            
-                        
-            
-            <div class="col-md-6 mt-5">
+    <a href="https://wa.me/5591982191168?text=Quero%20uma%20consultoria%20em%20tráfego%20pago" class="btn">Solicite uma Análise Gratuita</a>
+</header>  
+
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+
+
+<!-- Card Direito Penal -->
+<div id="direito_penal" class="card">
+<div class="row g-0">
+<div class="col-md-4">
+<img class="card-img" src="assets/imagens/Dpen.jpg" alt="Imagem de Direito Imobiliário">
+</div> 
+<div class="col-md-8">
+<div class="card-body">
+<h3>Direito Penal</h3>
+<p>  Nossa atuação no Direito Penal é pautada pela defesa firme e estratégica dos direitos de nossos clientes, sempre com um olhar atento às particularidades de cada caso. Prestamos assessoria em situações que envolvem a Lei Maria da Penha, oferecendo suporte especializado para vítimas de violência doméstica e familiar, e conduzindo a defesa em casos de delitos variados, assegurando que os direitos de nossos clientes sejam resguardados em todos os níveis do processo penal. Garantimos uma atuação ética e comprometida, sempre buscando a melhor solução para cada situação.
+</p>     
+<!-- ------------------------------------ -->                    
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#direitoPenal" aria-expanded="false" aria-controls="direitoPenal">
+Explorar Direito Penal
+</button>               
+<!-- Texto oculto com submenus -->
+<div class="collapse collapse-text" id="direitoPenal">
+<ul>
+<br>
+<li>
+     
+    <p> <strong>MARIA DA PENHA:</strong>  Proteção dos direitos das mulheres, prevenindo abusos e assegurando a justiça.</p>
+        <a href="maria-da-penha.html" class="btn btn-outline-primary btn-sm">Saiba Mais</a></li> <br>
+   
+                 
+</ul>   
+ <!-- Hero Section -->
+ <header class="hero"> 
+    <h2>Precisa de Ajuda Jurídica?</h2>
+    
+    <a href="https://wa.me/5591982191168?text=Quero%20uma%20consultoria%20em%20tráfego%20pago" class="btn">Solicite uma Análise Gratuita</a>
+</header>                      
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+
+ 
+<!-- Card Direito do Trabalho -->
+<div id="direito_do_trabalho" class="card">
+<div class="row g-0">
+<div class="col-md-4">
+<img class="card-img" src="assets/imagens/Dt.jpg" alt="Imagem de Direito do Trabalho">
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<h3>Direito do Trabalho</h3>
+<p> O Direito do Trabalho é o ramo jurídico que regula as relações entre empregados e empregadores, estabelecendo direitos e obrigações de ambas as partes. Seu objetivo é garantir condições justas e dignas de trabalho, assegurando a proteção dos trabalhadores e promovendo o equilíbrio nas relações laborais, como remuneração, jornada, segurança e saúde ocupacional.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+ 
+
+
+
+
+<!-- Card Direito Imobiliário -->
+<div id="direito_imobiliario" class="card">
+<div class="row g-0">
+<div class="col-md-4">
+
+<img class="card-img" src="assets/imagens/imobiliario.jpg" alt="Imagem de Direito Imobiliário">
+</div> 
+<div class="col-md-8">
+<div class="card-body">
+
+<h3>Direito Imobiliário</h3>
+<p>  Nossa atuação no Direito Imobiliário abrange um suporte completo para regularização e legalização de imóveis, garantindo a segurança jurídica necessária em cada etapa do processo. Com experiência em questões como registro de propriedade, análise de contratos, compra e venda, locações e usucapião, oferecemos um acompanhamento especializado para evitar riscos e assegurar que todas as transações imobiliárias sejam realizadas de forma correta e eficiente. Nosso objetivo é proporcionar tranquilidade e confiança ao cliente, cuidando de toda a documentação e assegurando que os negócios imobiliários sejam concluídos com total transparência e conformidade legal.
+</p>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+<!-- Card Direito Administrativo -->
+<div id="direito_adminitrativo" class="card">
+<div class="row g-0">
+<div class="col-md-4">
+<img class="card-img" src="assets/imagens/administrativo.jpg" alt="Imagem de Direito Administrativo">
+</div> 
+<div class="col-md-8">
+<div class="card-body">
+<h3>Direito Administrativo</h3>
+<p>  O Direito Administrativo é o ramo que disciplina as atividades e as relações jurídicas entre o Estado e os cidadãos, especialmente no que tange à administração pública. Somos experts em defesas contra decisões administrativas e na defesa dos direitos dos servidores, além de atuar com grande maestria nos direitos dos cidadãos em face da Administração Pública.
+</p>
+
+              
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+<!-- Card Direito Previdenciário -->
+<div id="direito_previdenciario" class="card">
+<div class="row g-0">
+<div class="col-md-4">
+<img class="card-img" src="assets/imagens/Dprev.jpg" alt="Imagem de Direito Previdenciário">
+</div> 
+<div class="col-md-8">
+<div class="card-body">
+<h3>Direito Previdenciário</h3>
+<p>  O Direito Previdenciário é uma área autônoma do Direito Público que assegura o cumprimento dos direitos relacionados à Seguridade Social, regulando as relações entre o segurado e o ente previdenciário. No Brasil, essa relação é gerida pelo Instituto Nacional do Seguro Social (INSS), garantindo a proteção social e o acesso a benefícios previdenciários como aposentadorias, pensões e auxílios.
+</p>
+                
+    </div>
+    </div>
+    </div>
+    </div>
+  
+
+
+   
+<!-- áreas de sobre -->  
+<section id="sobre" class="container text-center">
+<h2 class="section-header"> Sobre </h2>
+</section>
+
+
+
+<!-- card2  jorge -->
+<div class="card">
+<p>
+<img class="card-img" src="assets/imagens/jorge.jpg" alt="Imagem Jorge">
+</p>
+<div class="card-body">
+
+<p>
+
+   Nosso escritório foi fundado com o propósito de oferecer um atendimento jurídico diferenciado, 
+   sempre prezando pela excelência e dedicação a nossos clientes e parceiros. Atuamos de forma abrangente, 
+   tanto no setor público quanto no privado, oferecendo consultoria e assessoria jurídica em diversas áreas do Direito, 
+   como previdência social, direito trabalhista, direito penal e questões civis do dia a dia.
+   Com uma equipe composta por profissionais altamente qualificados e experientes, buscamos aliar conhecimento técnico 
+   e práticas inovadoras para solucionar os casos mais complexos. Nosso compromisso é proporcionar um serviço personalizado,
+   construindo relações baseadas em confiança e transparência. Acreditamos que cada cliente é único e, por isso, tratamos 
+   cada caso com a atenção e o respeito que merece.
+
+    Sob a liderança de Jorge Correa, nossa equipe se destaca pelo comprometimento em alcançar os melhores resultados para nossos clientes,
+    apoiando-os em todas as etapas do processo jurídico. Se você está em busca de um advogado confiável e dedicado para atender às suas necessidades jurídicas, 
+    entre em contato conosco. Estamos prontos para oferecer o suporte necessário e ajudar você a superar os desafios legais com segurança e eficiência.
+</p>    
+<p>
+Jorge Corrêa Filho – Temos orgulho em manter uma tradição de excelência e comprometimento, oferecendo serviços jurídicos de alta qualidade e 
+atendimento personalizado. Compreendemos os desafios e as pressões que cada caso pode trazer, e estamos prontos para apoiá-lo em todas as etapas do processo.
+</p>
+
+
+
+</div>
+</div>          
+</div>
+
+</section>
+
+
+<!-- 
+ <div class="col-md-6 mt-5">
                 <address>
                     <strong>Advogado Jorge Correa</strong><br>
                     Endereço: tv Mariz e Barros , 2321, sala 201A.  <br>
                     Marco, Belém-PA <br>
-                    Telefone: (91) 98219-1168 <br>
+                    Telefone: (91) 982191168 <br>
                     Email: jorgecorreafh.adv@gmail.com
                 </address>
-                
-                <!-- Botão do WhatsApp -->
-                <a href="https://api.whatsapp.com/send?phone= (91) 98219-1168" target="_blank" class="btn btn-success">WhatsApp</a>
-            </div>
-                
-            <div class="col-md-6 mt-5">
-                <!-- Mapa do Google Maps -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5665280101957!2d-48.46608832664738!3d-1.4352863985511835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c0c2b11fd11%3A0x50def96aa793922!2sTv.%20Mariz%20e%20Barros%2C%202321%20-%20Marco%2C%20Bel%C3%A9m%20-%20PA%2C%2066080-471!5e0!3m2!1spt-BR!2sbr!4v1694184421516!5m2!1spt-BR!2sbr" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-             </div>   
-
-           
-            </div>
-
-            
-        </div>
+-->
+<!-- Seção Contato Completa -->
+<section id="contato" class="text-center">
+    <h2 class="section-header">Entre em Contato</h2>
+    <p>Entre em contato conosco pelo telefone ou através das redes sociais.</p>
+    <p style="font-size: 0.9em;">Email: <a href="mailto:jorgecorreafh.adv@gmail.com">jorgecorreafh.adv@gmail.com</a></p>
+    <p style="font-size: 0.9em;">Telefone: <a href="tel:+5591982191168">(91) 98219-1168</a></p>
+<br>   
+    
+    <div class="social-icons">
+        <a href="https://www.facebook.com/jorgecorreafilho" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/jorgecorreaf" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/Jorgecorreafh?t=T5iGxvFQKyPJ3XDwgpxCCg&s=09" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.tiktok.com/@jorge.correa.adv?_t=8rAHAv90Du4&_r=1" target="_blank" class="me-3"><i class="bi bi-tiktok"></i></a>
     </div>
+<br>   
+
+    <a href="https://wa.me/5591982191168" target="_blank" class="btn btn-success">WhatsApp</a>
 </section>
+<br>
+
+
 
 <!-- Rodapé -->
-<footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-        &copy; 2023 Advogado Jorge Correa. Todos os direitos reservados.
-    </div>
+<footer class="text-center">
+    <p>JORGE CORRÊA FILHO <br> OAB/PA - 32.244 </p>
+    <p2> Endereço: Trav. Estrela, N° 2321, Marco,  Belém-Pa</p2>
+   
+    <p> &copy; 2024 Jorge Corrêa Filho - Todos os direitos reservados. <a href="#privacy-policy">Política de Privacidade</a> </p>
 </footer>
 
-<!-- Adicione os links para os arquivos JavaScript do Bootstrap e do jQuery aqui -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<!-- javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>
+
+
+
+
+
+ 
